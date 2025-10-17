@@ -134,6 +134,7 @@
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
+      padding-top: 80px; /* Espaço para o header fixo */
     }
 
     .container {
@@ -226,9 +227,16 @@
       background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
       padding: 20px 0;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      width: 100%;
       z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    header.header-hidden {
+      transform: translateY(-100%);
     }
 
     .header-container {
@@ -767,7 +775,7 @@
 <body>
 
   <!-- 🎯 Header -->
-  <header>
+  <header id="main-header">
     <div class="container header-container">
       <div class="logo-container">
         <img src="IMG/logo.png" alt="Serralheria Snoopy Art - Especialistas em Obras Metálicas em São Paulo" width="60" height="60">
@@ -989,6 +997,26 @@
     <img src="IMG/whatsapp.png" alt="WhatsApp Serralheria Snoopy Art" width="35" height="35">
   </a>
 
+  <script>
+    // Script para esconder o cabeçalho na rolagem
+    let lastScrollTop = 0;
+    const header = document.getElementById('main-header');
+    const scrollThreshold = 100; // Quantidade de rolagem necessária para esconder
+
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        // Rolando para baixo - esconde o header
+        header.classList.add('header-hidden');
+      } else {
+        // Rolando para cima - mostra o header
+        header.classList.remove('header-hidden');
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+  </script>
+
 </body>
 </html>
-
