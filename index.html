@@ -265,7 +265,7 @@
       flex-direction: column;
     }
 
-    .company-name h1 {
+    .company-name h2 {
       font-size: 1.8rem;
       color: var(--secondary);
       margin: 0;
@@ -449,7 +449,7 @@
       min-width: 300px;
     }
 
-    .equipe-content h3 {
+    .equipe-content h2 {
       font-size: 2.2rem;
       color: var(--secondary);
       margin-bottom: 20px;
@@ -457,7 +457,7 @@
       padding-bottom: 15px;
     }
 
-    .equipe-content h3:after {
+    .equipe-content h2:after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -520,7 +520,7 @@
       min-width: 300px;
     }
 
-    .localizacao-text h3 {
+    .localizacao-text h2 {
       font-size: 2rem;
       color: var(--secondary);
       margin-bottom: 20px;
@@ -528,7 +528,7 @@
       padding-bottom: 15px;
     }
 
-    .localizacao-text h3:after {
+    .localizacao-text h2:after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -762,11 +762,11 @@
         font-size: 1.6rem;
       }
       
-      .equipe-content h3, .localizacao-text h3 {
+      .equipe-content h2, .localizacao-text h2 {
         font-size: 1.6rem;
       }
       
-      .company-name h1 {
+      .company-name h2 {
         font-size: 1.5rem;
       }
     }
@@ -778,9 +778,9 @@
   <header id="main-header">
     <div class="container header-container">
       <div class="logo-container">
-        <img src="IMG/logo.png" alt="Serralheria Snoopy Art - Especialistas em Obras Metálicas em São Paulo" width="60" height="60">
+        <img src="IMG/logo.png" alt="Logo Serralheria Snoopy Art - Especialistas em obras metálicas em São Paulo" width="60" height="60">
         <div class="company-name">
-          <h1>Serralheria Snoopy Art</h1>
+          <h2>Serralheria Snoopy Art</h2>
           <div class="tagline">Especialistas em Serralheria</div>
         </div>
       </div>
@@ -791,156 +791,158 @@
   </header>
 
   <!-- 🔧 Seção Hero -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="container">
-      <h1 id="hero-title">Serralheria de <span>Qualidade</span> em São Paulo</h1>
-      <p>Especializados em serviços de serralheria, oferecendo soluções metálicas personalizadas com excelência e durabilidade para residências e empresas.</p>
-      <div class="hero-btns">
-        <a href="#servicos" class="btn">Nossos Serviços</a>
-        <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+realizar+um+serviço+com+vocês&type=phone_number&app_absent=0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Fazer Orçamento</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔧 Seção de Serviços -->
-  <section id="servicos" class="servicos" aria-labelledby="servicos-title">
-    <div class="container">
-      <div class="section-title">
-        <h2 id="servicos-title">Nossos Serviços</h2>
-        <p>Conheça os serviços especializados da Serralheria Snoopy Art. Cada projeto é realizado com precisão, qualidade e segurança, sob medida para suas necessidades.</p>
-      </div>
-      <div class="servicos-grid">
-        <!-- Coberturas Metálicas -->
-        <div class="servico-card" itemscope itemtype="https://schema.org/Service">
-          <div class="servico-img">
-            <img src="IMG/coberturas.png" alt="Coberturas Metálicas - Projetos sob medida para proteção e segurança" width="400" height="200" loading="lazy">
-          </div>
-          <div class="servico-content">
-            <h3 itemprop="name">Coberturas Metálicas</h3>
-            <p itemprop="description">Projetos sob medida, resistentes e seguros para proteger seu espaço com qualidade e durabilidade.</p>
-            <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+cobertura+metálica&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
-          </div>
-        </div>
-
-        <!-- Mezaninos e Grades -->
-        <div class="servico-card" itemscope itemtype="https://schema.org/Service">
-          <div class="servico-img">
-            <img src="IMG/mezaninos.png" alt="Mezaninos e Grades - Otimização de espaço com segurança" width="400" height="200" loading="lazy">
-          </div>
-          <div class="servico-content">
-            <h3 itemprop="name">Mezaninos e Grades</h3>
-            <p itemprop="description">Otimize seu espaço com mezaninos e grades sob medida, combinando praticidade e segurança.</p>
-            <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+mezanino+ou+grades&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
-          </div>
-        </div>
-
-        <!-- Portões e Portas Automáticas -->
-        <div class="servico-card" itemscope itemtype="https://schema.org/Service">
-          <div class="servico-img">
-            <img src="IMG/portao.png" alt="Portões e Portas Automáticas - Reparos e instalação profissional" width="400" height="200" loading="lazy">
-          </div>
-          <div class="servico-content">
-            <h3 itemprop="name">Portões e Portas Automáticas</h3>
-            <p itemprop="description">Reparos e instalação de portões automáticos (exceto alumínio) com atendimento rápido e eficiente.</p>
-            <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+portão+automático&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
-          </div>
-        </div>
-
-        <!-- Manutenção Emergencial 24h -->
-        <div class="servico-card servico-emergencia" itemscope itemtype="https://schema.org/Service">
-          <div class="badge-emergencia">PLANTÃO 24H</div>
-          <div class="servico-img">
-            <img src="IMG/24horas.jpeg" alt="Manutenção Emergencial 24 Horas - Atendimento imediato para portões e portas automáticas" width="400" height="200" loading="lazy">
-          </div>
-          <div class="servico-content">
-            <h3 itemprop="name">Manutenção Emergencial 24h</h3>
-            <p itemprop="description">Serviço de emergência para portas e portões automáticos. Atendimento 24 horas para resolver seu problema quando mais precisar.</p>
-            <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=URGENTE%21+Preciso+de+manutenção+emergencial+em+portão+automático&type=phone_number&app_absent=0" class="btn btn-emergencia" target="_blank" rel="noopener noreferrer">Chamar Emergência</a>
-          </div>
-        </div>
-
-        <!-- Serviços Personalizados -->
-        <div class="servico-card" itemscope itemtype="https://schema.org/Service">
-          <div class="servico-img">
-            <img src="IMG/servicos.jpeg" alt="Serviços Personalizados de Serralheria - Projetos especiais sob medida" width="400" height="200" loading="lazy">
-          </div>
-          <div class="servico-content">
-            <h3 itemprop="name">Serviços Personalizados</h3>
-            <p itemprop="description">Atendemos projetos especiais de serralheria, adaptados para atender todas as suas necessidades específicas.</p>
-            <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+serviço+personalizado&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
-          </div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Serralheria de <span>Qualidade</span> em São Paulo</h1>
+        <p>Especializados em serviços de serralheria, oferecendo soluções metálicas personalizadas com excelência e durabilidade para residências e empresas.</p>
+        <div class="hero-btns">
+          <a href="#servicos" class="btn">Nossos Serviços</a>
+          <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+realizar+um+serviço+com+vocês&type=phone_number&app_absent=0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Fazer Orçamento</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 👷‍♂️ Seção Nossa Equipe -->
-  <section class="nossa-equipe-section" aria-labelledby="equipe-title">
-    <div class="container">
-      <div class="nossa-equipe">
-        <div class="equipe-img">
-          <img src="IMG/equipe.jpeg" alt="Equipe especializada da Serralheria Snoopy Art - Profissionais qualificados" width="500" height="400" loading="lazy">
+    <!-- 🔧 Seção de Serviços -->
+    <section id="servicos" class="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="servicos-title">Nossos Serviços</h2>
+          <p>Conheça os serviços especializados da Serralheria Snoopy Art. Cada projeto é realizado com precisão, qualidade e segurança, sob medida para suas necessidades.</p>
         </div>
-        <div class="equipe-content">
-          <h3 id="equipe-title">Nossa Equipe</h3>
-          <p>A equipe da Serralheria Snoopy Art é formada por profissionais especializados e comprometidos em entregar soluções de alta qualidade em trabalhos metálicos sob medida.</p>
-          <p>Cada integrante atua com dedicação para garantir segurança, durabilidade e um acabamento impecável em todos os projetos.</p>
-          
-          <div class="equipe-features">
-            <div class="feature">
-              <div class="feature-icon">✓</div>
-              <div class="feature-text">Profissionais Qualificados</div>
+        <div class="servicos-grid">
+          <!-- Coberturas Metálicas -->
+          <article class="servico-card" itemscope itemtype="https://schema.org/Service">
+            <div class="servico-img">
+              <img src="IMG/coberturas.png" alt="Cobertura metálica industrial instalada pela Serralheria Snoopy Art" width="400" height="200" loading="lazy">
             </div>
-            <div class="feature">
-              <div class="feature-icon">✓</div>
-              <div class="feature-text">Atendimento Personalizado</div>
+            <div class="servico-content">
+              <h3 itemprop="name">Coberturas Metálicas</h3>
+              <p itemprop="description">Projetos sob medida, resistentes e seguros para proteger seu espaço com qualidade e durabilidade.</p>
+              <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+cobertura+metálica&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
             </div>
-            <div class="feature">
-              <div class="feature-icon">✓</div>
-              <div class="feature-text">Materiais de Qualidade</div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">✓</div>
-              <div class="feature-text">Garantia nos Serviços</div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">24h</div>
-              <div class="feature-text">Plantão Emergencial</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          </article>
 
-  <!-- 📍 Seção Localização -->
-  <section class="localizacao" aria-labelledby="localizacao-title">
-    <div class="container">
-      <div class="section-title">
-        <h2 id="localizacao-title">Onde Estamos</h2>
-        <p>Localizados estrategicamente para atender toda a região de São Paulo, Litoral e Interior.</p>
+          <!-- Mezaninos e Grades -->
+          <article class="servico-card" itemscope itemtype="https://schema.org/Service">
+            <div class="servico-img">
+              <img src="IMG/mezaninos.png" alt="Mezanino metálico para otimização de espaço em São Paulo" width="400" height="200" loading="lazy">
+            </div>
+            <div class="servico-content">
+              <h3 itemprop="name">Mezaninos e Grades</h3>
+              <p itemprop="description">Otimize seu espaço com mezaninos e grades sob medida, combinando praticidade e segurança.</p>
+              <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+mezanino+ou+grades&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </div>
+          </article>
+
+          <!-- Portões e Portas Automáticas -->
+          <article class="servico-card" itemscope itemtype="https://schema.org/Service">
+            <div class="servico-img">
+              <img src="IMG/portao.png" alt="Portão automático residencial instalado pela Serralheria Snoopy Art" width="400" height="200" loading="lazy">
+            </div>
+            <div class="servico-content">
+              <h3 itemprop="name">Portões e Portas Automáticas</h3>
+              <p itemprop="description">Reparos e instalação de portões automáticos (exceto alumínio) com atendimento rápido e eficiente.</p>
+              <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+portão+automático&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </div>
+          </article>
+
+          <!-- Manutenção Emergencial 24h -->
+          <article class="servico-card servico-emergencia" itemscope itemtype="https://schema.org/Service">
+            <div class="badge-emergencia">PLANTÃO 24H</div>
+            <div class="servico-img">
+              <img src="IMG/24horas.jpeg" alt="Serviço de manutenção emergencial 24 horas para portões automáticos" width="400" height="200" loading="lazy">
+            </div>
+            <div class="servico-content">
+              <h3 itemprop="name">Manutenção Emergencial 24h</h3>
+              <p itemprop="description">Serviço de emergência para portas e portões automáticos. Atendimento 24 horas para resolver seu problema quando mais precisar.</p>
+              <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=URGENTE%21+Preciso+de+manutenção+emergencial+em+portão+automático&type=phone_number&app_absent=0" class="btn btn-emergencia" target="_blank" rel="noopener noreferrer">Chamar Emergência</a>
+            </div>
+          </article>
+
+          <!-- Serviços Personalizados -->
+          <article class="servico-card" itemscope itemtype="https://schema.org/Service">
+            <div class="servico-img">
+              <img src="IMG/servicos.jpeg" alt="Projeto personalizado de serralheria artística em metal" width="400" height="200" loading="lazy">
+            </div>
+            <div class="servico-content">
+              <h3 itemprop="name">Serviços Personalizados</h3>
+              <p itemprop="description">Atendemos projetos especiais de serralheria, adaptados para atender todas as suas necessidades específicas.</p>
+              <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+um+orçamento+para+serviço+personalizado&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="localizacao-content">
-        <div class="localizacao-text">
-          <h3>Visite Nossa Serralheria</h3>
-          <p>📍 Estamos localizados em uma região de fácil acesso</p>
-          <p>⏰ Horário de funcionamento: Segunda a Sexta, 8h às 18h</p>
-          <p>🚗 Estacionamento disponível para clientes</p>
-          <p>📞 Atendimento via WhatsApp também disponível</p>
-          <p>🔧 Serviços em toda a Grande São Paulo</p>
-          <p style="color: #e74c3c; font-weight: 600;">🚨 Plantão Emergencial 24 horas para portões</p>
-          
-          <div style="margin-top: 30px;">
-            <a href="https://www.google.com/maps/place/Serralheria+Snoopy+Art/data=!4m2!3m1!1s0x0:0xe6e984e07f5a397a?sa=X&ved=1t:2428&ictx=111" class="btn" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a>
+    </section>
+
+    <!-- 👷‍♂️ Seção Nossa Equipe -->
+    <section class="nossa-equipe-section" aria-labelledby="equipe-title">
+      <div class="container">
+        <div class="nossa-equipe">
+          <div class="equipe-img">
+            <img src="IMG/equipe.jpeg" alt="Equipe de profissionais da Serralheria Snoopy Art trabalhando" width="500" height="400" loading="lazy">
+          </div>
+          <div class="equipe-content">
+            <h2 id="equipe-title">Nossa Equipe</h2>
+            <p>A equipe da Serralheria Snoopy Art é formada por profissionais especializados e comprometidos em entregar soluções de alta qualidade em trabalhos metálicos sob medida.</p>
+            <p>Cada integrante atua com dedicação para garantir segurança, durabilidade e um acabamento impecável em todos os projetos.</p>
+            
+            <div class="equipe-features">
+              <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div class="feature-text">Profissionais Qualificados</div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div class="feature-text">Atendimento Personalizado</div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div class="feature-text">Materiais de Qualidade</div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div class="feature-text">Garantia nos Serviços</div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">24h</div>
+                <div class="feature-text">Plantão Emergencial</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="localizacao-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6856934833413!2d-46.5700785!3d-23.543804500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f27e5acea49%3A0xe6e984e07f5a397a!2sSerralheria%20Snoopy%20Art!5e0!3m2!1spt-BR!2sbr!4v1760728710195!5m2!1spt-BR!2sbr" 
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da Serralheria Snoopy Art no Google Maps"></iframe>
+      </div>
+    </section>
+
+    <!-- 📍 Seção Localização -->
+    <section class="localizacao" aria-labelledby="localizacao-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="localizacao-title">Onde Estamos</h2>
+          <p>Localizados estrategicamente para atender toda a região de São Paulo, Litoral e Interior.</p>
+        </div>
+        <div class="localizacao-content">
+          <div class="localizacao-text">
+            <h2>Visite Nossa Serralheria</h2>
+            <p>📍 Estamos localizados em uma região de fácil acesso</p>
+            <p>⏰ Horário de funcionamento: Segunda a Sexta, 8h às 18h</p>
+            <p>🚗 Estacionamento disponível para clientes</p>
+            <p>📞 Atendimento via WhatsApp também disponível</p>
+            <p>🔧 Serviços em toda a Grande São Paulo</p>
+            <p style="color: #e74c3c; font-weight: 600;">🚨 Plantão Emergencial 24 horas para portões</p>
+            
+            <div style="margin-top: 30px;">
+              <a href="https://www.google.com/maps/place/Serralheria+Snoopy+Art/data=!4m2!3m1!1s0x0:0xe6e984e07f5a397a?sa=X&ved=1t:2428&ictx=111" class="btn" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a>
+            </div>
+          </div>
+          <div class="localizacao-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6856934833413!2d-46.5700785!3d-23.543804500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f27e5acea49%3A0xe6e984e07f5a397a!2sSerralheria%20Snoopy%20Art!5e0!3m2!1spt-BR!2sbr!4v1760728710195!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da Serralheria Snoopy Art no Google Maps"></iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- 🗺️ Rodapé -->
   <footer>
@@ -951,10 +953,10 @@
           <p>Especialistas em serviços de serralheria em São Paulo. Oferecemos soluções metálicas personalizadas com qualidade e durabilidade.</p>
           <div class="redes">
             <a href="https://www.instagram.com/serralheriasnoopy" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no Instagram">
-              <img src="IMG/instagram.png" alt="Instagram Serralheria Snoopy Art" width="20" height="20">
+              <img src="IMG/instagram.png" alt="Ícone do Instagram - Siga a Serralheria Snoopy Art" width="20" height="20">
             </a>
             <a href="https://www.google.com/maps/place/Serralheria+Snoopy+Art/data=!4m2!3m1!1s0x0:0xe6e984e07f5a397a?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" aria-label="Veja nossa localização no Google Maps">
-              <img src="IMG/map.png" alt="Google Maps Serralheria Snoopy Art" width="20" height="20">
+              <img src="IMG/map.png" alt="Ícone do Google Maps - Localização da Serralheria Snoopy Art" width="20" height="20">
             </a>
           </div>
         </div>
@@ -994,7 +996,7 @@
   <!-- 💬 Botão Flutuante WhatsApp -->
   <a href="https://api.whatsapp.com/send/?phone=5511973446461&text=Olá%2C+Gostaria+de+realizar+um+serviço+com+vocês&type=phone_number&app_absent=0" 
      class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Entre em contato via WhatsApp">
-    <img src="IMG/whatsapp.png" alt="WhatsApp Serralheria Snoopy Art" width="35" height="35">
+    <img src="IMG/whatsapp.png" alt="Ícone do WhatsApp - Fale com a Serralheria Snoopy Art" width="35" height="35">
   </a>
 
   <script>
