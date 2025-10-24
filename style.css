@@ -127,6 +127,11 @@ header {
   transition: transform 0.3s ease;
 }
 
+header.main-nav {
+  margin-top: -20px; /* sobe o menu */
+}
+
+
 header.header-hidden {
   transform: translateY(-100%);
 }
