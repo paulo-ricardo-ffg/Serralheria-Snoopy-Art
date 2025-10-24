@@ -127,11 +127,6 @@ header {
   transition: transform 0.3s ease;
 }
 
-header.main-nav {
-  margin-top: -20px; /* sobe o menu */
-}
-
-
 header.header-hidden {
   transform: translateY(-100%);
 }
@@ -160,6 +155,7 @@ header.header-hidden {
 .company-name {
   display: flex;
   flex-direction: column;
+  font-size: 0.9rem;
 }
 
 .company-name h1 {
