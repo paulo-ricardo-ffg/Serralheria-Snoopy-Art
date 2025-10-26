@@ -41,74 +41,182 @@
   <link rel="stylesheet" href="style.css">
   
   <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Serralheria Snoopy Art",
-    "description": "Especializada em serviços de serralheria, coberturas metálicas, portões automáticos, mezaninos e serviços personalizados em São Paulo, Litoral e Interior",
-    "url": "https://www.serralheriasnoopyart.com.br",
-    "telephone": "+55-11-97344-6461",
-    "email": "serralheriasnoopyart@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "São Paulo",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "-23.5438045",
-      "longitude": "-46.5700785"
-    },
-    "openingHours": "Mo-Fr 08:00-18:00",
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "-23.5438045",
-        "longitude": "-46.5700785"
-      },
-      "geoRadius": "50000"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Serviços de Serralheria",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Coberturas Metálicas"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Portões Automáticos"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Mezaninos e Grades"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Manutenção Emergencial 24h"
-          }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.serralheriasnoopyart.com.br/#localbusiness",
+  "name": "Serralheria Snoopy Art",
+  "description": "Serralheria especializada em coberturas metálicas, portões automáticos, mezaninos, grades e serviços personalizados em todo São Paulo - Capital, Litoral e Interior. Atendimento 24 horas para emergências em portões automáticos.",
+  "url": "https://www.serralheriasnoopyart.com.br",
+  "telephone": "+55-11-97344-6461",
+  "email": "serralheriasnoopyart@gmail.com",
+  
+  "image": [
+    "https://www.serralheriasnoopyart.com.br/IMG/logo.png"
+  ],
+  
+  "logo": "https://www.serralheriasnoopyart.com.br/IMG/logo.png",
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Tijuco Preto",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR",
+    "postalCode": "03316-000",
+    "addressNeighborhood": "Tatuapé"
+  },
+  
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-23.5430478",
+    "longitude": "-46.5668804"
+  },
+  
+  "openingHours": [
+    "Mo-Fr 08:00-18:00",
+    "Sa 08:00-12:00"
+  ],
+  
+  "serviceArea": {
+    "@type": "Place",
+    "name": "Estado de São Paulo",
+    "description": "Atendemos em toda a Capital, Região Metropolitana, Litoral Paulista e Interior do Estado"
+  },
+  
+  "areaServed": {
+    "@type": "State",
+    "name": "São Paulo",
+    "description": "Todo o território do Estado de São Paulo"
+  },
+  
+  "priceRange": "$$",
+  "currenciesAccepted": "BRL",
+  
+  "paymentAccepted": [
+    "Dinheiro",
+    "Cartão de Crédito",
+    "Cartão de Débito", 
+    "PIX",
+    "Transferência Bancária"
+  ],
+  
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços de Serralheria",
+    "description": "Catálogo completo de serviços em serralheria e obras metálicas",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Coberturas Metálicas",
+          "description": "Instalação e manutenção de coberturas metálicas industriais e residenciais",
+          "areaServed": "Estado de São Paulo"
         }
-      ]
-    },
-    "sameAs": [
-      "https://www.instagram.com/serralheriasnoopy"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Portões Automáticos",
+          "description": "Instalação, manutenção e reparo de portões automáticos (exceto alumínio)",
+          "areaServed": "Estado de São Paulo"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mezaninos e Grades",
+          "description": "Fabricação e instalação de mezaninos metálicos e grades de proteção",
+          "areaServed": "Estado de São Paulo"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Manutenção Emergencial 24h",
+          "description": "Serviço de emergência 24 horas para portões e portas automáticas",
+          "areaServed": "Região Metropolitana de SP"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Serviços Personalizados em Serralheria",
+          "description": "Projetos especiais e sob medida em serralheria artística e industrial",
+          "areaServed": "Estado de São Paulo"
+        }
+      }
     ]
+  },
+  
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Orçamento Gratuito",
+      "description": "Orçamento sem compromisso para serviços de serralheria",
+      "price": "0",
+      "priceCurrency": "BRL"
+    }
+  ],
+  
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+55-11-97344-6461",
+      "contactType": "customer service",
+      "areaServed": "BR",
+      "availableLanguage": "pt-BR",
+      "email": "serralheriasnoopyart@gmail.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+55-11-97344-6461", 
+      "contactType": "emergency service",
+      "areaServed": "BR", 
+      "availableLanguage": "pt-BR",
+      "description": "Plantão 24 horas para emergências em portões automáticos"
+    }
+  ],
+  
+  "keywords": [
+    "serralheria São Paulo",
+    "coberturas metálicas SP",
+    "portões automáticos São Paulo", 
+    "mezaninos SP",
+    "grades de proteção",
+    "serralheria litoral SP",
+    "serralheria interior SP",
+    "manutenção portões 24h"
+  ],
+  
+  "knowsAbout": [
+    "Serralheria Industrial",
+    "Coberturas Metálicas", 
+    "Portões Automáticos",
+    "Mezaninos Metálicos",
+    "Grades de Proteção",
+    "Solda e Estruturas Metálicas"
+  ],
+  
+  "sameAs": [
+    "https://www.instagram.com/serralheriasnoopy"
+  ],
+  
+  "isAccessibleForFree": false,
+  "smokingAllowed": false,
+  
+  "mainEntityOfPage": {
+    "@type": "WebPage", 
+    "@id": "https://www.serralheriasnoopyart.com.br"
   }
+}
+</script>
   </script>
 </head>
 <body>
@@ -368,6 +476,7 @@
 
 </body>
 </html>
+
 
 
 
